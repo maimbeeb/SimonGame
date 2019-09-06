@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SIMON GAME</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/simon-stylesheet.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>SIMON GAME</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/animate.min.css" />
-  <link rel="stylesheet" href="css/simon-stylesheet.css" />
-</head>
-
-<body>
-  <div class="container mt-5">
-    <div class="simon-box-shadow">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="text-center simon-font-style-cursive">
-            Enjoy Simon Game
-          </h2>
-          <div class="text-center">
-            <img src="image/play-icon.png" height="50px" width="50px" />
-            <img src="image/stop-icon.png" height="50px" width="50px" />
+  <body>
+    <div class="container mt-5">
+      <div class="simon-box-shadow">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-center simon-font-style-cursive">
+              Enjoy Simon Game
+            </h2>
+            <div class="text-center">
+              <img src="image/play-icon.png" height="50px" width="50px" />
+              <img src="image/stop-icon.png" height="50px" width="50px" />
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="simon-game-tab">
-            <div class="simon-first-row">
-              <div id="blue" class="simon-game-circle" ></div>
-            </div>
-            <div class="simon-second-row">
-              <div id="green" class="simon-game-circle" ></div>
-              <div id="gameNumber">
-                <h2 id="clickNumber">0</h2>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="simon-game-tab">
+              <div class="simon-first-row">
+                <div id="blue" class="simon-game-circle"></div>
               </div>
-              <div id="red" class="simon-game-circle" ></div>
+              <div class="simon-second-row">
+                <div id="green" class="simon-game-circle"></div>
+                <div id="gameNumber">
+                  <h2 id="clickNumber">0</h2>
+                </div>
+                <div id="red" class="simon-game-circle"></div>
+              </div>
+              <div class="simon-third-row">
+                <div id="dark" class="simon-game-circle"></div>
+              </div>
             </div>
-            <div class="simon-third-row">
-              <div id="dark" class="simon-game-circle" ></div>
+          </div>
+        </div>
+        <div class="modal fade modal-center" id="myModal" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content modal-bg">
+              <div class="modal-body">
+                <p id="alert-msg" class="text-center"></p>
+              </div>
+              <div class="modal-footer txt-align-center b-0">
+                <button
+                  type="button"
+                  class="btn"
+                  data-dismiss="modal"
+                  onClick="actionModal()"
+                  id="buttonName"
+                ></button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      
     </div>
-  </div>
-  <script src="js/jquery-2.2.4.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/simon-script.js"></script>
-</body>
-
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/simon-script.js"></script>
+  </body>
 </html>
