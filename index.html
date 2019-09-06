@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/simon-stylesheet.css" />
   </head>
-
   <body>
     <div class="container mt-5">
       <div class="simon-box-shadow">
@@ -17,8 +16,18 @@
               Enjoy Simon Game
             </h2>
             <div class="text-center">
-              <img src="image/play-icon.png" height="50px" width="50px" />
-              <img src="image/stop-icon.png" height="50px" width="50px" />
+              <img
+                src="image/play-icon.png"
+                height="50px"
+                width="50px"
+                onClick="toPlay()"
+              />
+              <img
+                src="image/stop-icon.png"
+                height="50px"
+                width="50px"
+                onClick="toStop()"
+              />
             </div>
           </div>
         </div>
@@ -26,17 +35,33 @@
           <div class="col-md-12">
             <div class="simon-game-tab">
               <div class="simon-first-row">
-                <div id="blue" class="simon-game-circle"></div>
+                <div
+                  id="blue"
+                  class="simon-game-circle"
+                  onClick="detectMoves(this.id)"
+                ></div>
               </div>
               <div class="simon-second-row">
-                <div id="green" class="simon-game-circle"></div>
+                <div
+                  id="green"
+                  class="simon-game-circle"
+                  onClick="detectMoves(this.id)"
+                ></div>
                 <div id="gameNumber">
                   <h2 id="clickNumber">0</h2>
                 </div>
-                <div id="red" class="simon-game-circle"></div>
+                <div
+                  id="red"
+                  class="simon-game-circle"
+                  onClick="detectMoves(this.id)"
+                ></div>
               </div>
               <div class="simon-third-row">
-                <div id="dark" class="simon-game-circle"></div>
+                <div
+                  id="dark"
+                  class="simon-game-circle"
+                  onClick="detectMoves(this.id)"
+                ></div>
               </div>
             </div>
           </div>
