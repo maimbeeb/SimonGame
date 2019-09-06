@@ -81,8 +81,8 @@ function playerTurn(x) {
     $("#buttonName").removeClass("btn-success");
     $("#buttonName").addClass("btn-danger");
     $("#buttonName").html("Try Again");
-    $("#myModal").css({ display: "flex" });
-    $("#myModal").modal();
+    $("#simonModal").css({ display: "flex" });
+    $("#simonModal").modal();
   } else {
     sound(x);
     var check = game.player.length === game.currentGame.length;
@@ -92,16 +92,16 @@ function playerTurn(x) {
         $("#buttonName").removeClass("btn-danger");
         $("#buttonName").addClass("btn-success");
         $("#buttonName").html("OK");
-        $("#myModal").css({ display: "flex" });
-        $("#myModal").modal();
+        $("#simonModal").css({ display: "flex" });
+        $("#simonModal").modal();
       } else {
         game.nextLevelBool = true;
         $("#alert-msg").html("Congratulations You Won Round " + game.count);
         $("#buttonName").removeClass("btn-danger");
         $("#buttonName").addClass("btn-success");
         $("#buttonName").html("Next Level");
-        $("#myModal").css({ display: "flex" });
-        $("#myModal").modal();
+        $("#simonModal").css({ display: "flex" });
+        $("#simonModal").modal();
       }
     }
   }
