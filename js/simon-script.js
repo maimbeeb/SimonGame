@@ -3,12 +3,6 @@ var game = {
   showColor: ["#green", "#blue", "#red", "#dark"],
   currentGame: [],
   player: [],
-  sound: {
-    blue: new Audio("sound/blue-tone.mp3"),
-    red: new Audio("sound/red-tone.mp3"),
-    dark: new Audio("sound/dark-tone.mp3"),
-    green: new Audio("sound/green-tone.mp3")
-  },
   nextLevelBool: false
 };
 
