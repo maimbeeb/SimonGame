@@ -79,6 +79,10 @@ body {
   font-family: cursive;
   color: #ff6709;
 }
+.simon-box-shadow {
+  box-shadow: 0 0 20px #b2beb5;
+  background-color: #bcd2d1;
+}
 .b-0 {
   border: none;
 }
