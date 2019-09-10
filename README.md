@@ -6,10 +6,8 @@
 	
 UX
 
-	GitHub login
-
-	Image and Link where it is hosted.
-  
+  	![Alt Text](/Screenshot_1.png)
+	
 Features and Implementation
 
 	List of User Story:
