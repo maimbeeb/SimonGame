@@ -5,9 +5,9 @@
 	a user has to listen and repeat the pattern of 20 sounds to win.
 	
 UX
+![](Screenshot_1.png)
 
-  	![Alt Text](/Screenshot_1.png)
-	
+
 Features and Implementation
 
 	List of User Story:
