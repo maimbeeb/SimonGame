@@ -45,3 +45,7 @@ Testing
 Deployment
 
 	1) Deployed in personal Heroku account to test the application.
+	
+Credits
+
+        1) Sample codes in github for memory games.
